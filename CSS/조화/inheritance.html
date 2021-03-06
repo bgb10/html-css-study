@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* 
+            li{color:red;}
+            h1{color:red;} 
+            */
+            html{color:red;}
+            #select{color:black;}
+            body{border:1px solid red;}
+            /* body 태그의 자식 태그들에 border 속성이 모두 전달되야 하는데 안된 이유는 무엇일까?
+            이유는 CSS 문법에서 어떤 속성은 상속하는 것이 유리하고, 어떤 속성은 아니라는 것이 규정되어 있기 때문에다.
+            상식적으로, border 속성을 상속하는 것은 그리 유익하지 않다. 
+            상속 여부는 CSS 속성을 보면 된다.
+            https://www.w3.org/TR/CSS21/propidx.html
+            */
+        </style>
+    </head>
+    <body>
+        <h1>수업내용</h1>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li id = "select">javascript</li>
+        </ul>
+    </body>
+</html>
+
+<!-- 상속으로 인해 부모 태그에 한 설정들이 자식에 배급되면서 코드를 더욱 간략하게 
+설계할 수 있어졌다. -->
