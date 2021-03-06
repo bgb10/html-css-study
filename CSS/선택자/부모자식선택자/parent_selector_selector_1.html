@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul li{ 
+                color:red;
+            }
+            /* ul 밑에 있는 li를 선택자로 한다 */
+            #lecture > li{
+                border:1px solid red;
+                color:blue;
+            }
+            /* > 는 "바로 밑에 있는"을 의미한다 */
+            ul, ol {
+                background-color: powderblue;
+            }
+            /* ul과 ol 태그 모두에 powderblue 배경 색상을 부여한다. */
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ol id = "lecture">
+            <!-- ol 태그가 2개 존재하는데, 특정 하나의 ol 태그에만
+            빨간 박스를 적용하고 싶기 때문에 id 선택자를 이용했다.
+            -->
+            <li>HTML</li>
+            <li>CSS
+                <ol>
+                    <li>selector</li>
+                    <li>declaration</li>
+                </ol>
+            </li>
+            <li>JavaScript</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{
+                color:red;
+                text-decoration:underline;
+            }
+            #select{
+                font-size: 50px;
+            }
+            #deactive{
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li id = "deactive">HTML</li>
+            <li id = "select">CSS</li>
+            <!-- 위의 id = "select"는 전적으로 html 문법인데,
+                id 속성의 속성값이 select 라는 것을 의미한다.
+                위의 <style> 태그 내부는 css 문법으로 작성이 되고,
+                css 문법 규정에 따라 select 라는 id를 가진 태그의 스타일을 변경하기 위해
+                #을 붙이게 된다.
+                즉, #은 아이디 선택자를 의미한다.
+            -->
+            <li id = "deactive">JavaScript</li>
+        </ul>
+    </body>
+</html>

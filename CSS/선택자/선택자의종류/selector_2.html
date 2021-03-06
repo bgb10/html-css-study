@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{
+                color:red;
+                text-decoration:underline;
+            }
+            #select{
+                font-size: 50px;
+            }
+            .deactive{
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class = "deactive">수업의 순서</h1>
+        <ul>
+            <li class = "deactive">HTML</li>
+            <li id = "select">CSS</li>
+            <li class = "deactive">JavaScript</li>
+            <!-- id와 class를 다르게 쓰는 이유
+            class는 말 그대로 어떤 묶음을 관리하기 위한 것이고
+            id는 개체 하나하나를 관리하기 위한 것이다.
+            여러개의 개체(묶음)에 스타일을 부과할 경우 class를 사용해야 마땅하다.
+            또한 id 속성값은 고유하므로 중복되지 않는다.
+            -->
+        </ul>
+    </body>
+</html>
