@@ -1,0 +1,1 @@
+stylish라는 extension을 이용해 웹 페이지의 구성(CSS)을 바꿀 수 있다.
