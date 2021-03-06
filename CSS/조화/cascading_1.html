@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        li{color:red;}
+        #idsel{color:blue;}
+        .classsel{color:green;}
+
+      </style>
+    </head>
+    <body>
+      <ul>
+        <li>html</li>
+        <li id="idsel" class="classsel" style="color:powderblue">css</li>
+        <li>javascript</li>
+      </ul>
+      <!-- 좁은 범위(tag selector<class selector<id selector<style attribute)순으로 우선적용된다. -->
+      <!-- !important 라고 적으면 최우선순위로 적용된다. but, 남용하지 말 것-->
+    </body>
+</html>
