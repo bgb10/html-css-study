@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 부모, 자식 관계간의 margin collapsing -->
+<html>
+    <head>
+        <style>
+            #parent{
+                /* border:1px solid tomato; */
+                /* border가 사라지는 순간에 child의 위치가 바뀌었다.
+                이는 margin을 border 기준으로 하기 때문에 생긴 일인 것 같다. */
+                /* 즉, 부모 태그가 시각적으로 아무런 효과도 없는 투명한 형태가 되면,
+                자식 태그와 부모 태그의 margin 값이 합쳐진다. 즉, 부모, 자식의 margin 값을 비교해서 큰 값으로 margin값을 정한다. */
+                margin-top: 100px;
+            }
+            #child{
+                background-color: powderblue;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>   
+        <div id="parent">
+            <div id="child">
+                Hello world!
+            </div>
+        </div>
+    </body>
+</html>

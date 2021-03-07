@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 
+    박스모델은 element들의 간격을 조절했다면, 포지션은 element들의 위치를 지정한다.
+ -->
+<html>
+    <head>
+        <style>
+            html{border:1px solid gray;}
+            div{
+                border:5px solid tomato;
+                margin:10px;
+            }
+            #me{
+                /* 포지션 설정: static이 기본값(offset 무시, 원래 위치에 정적으로 존재)*/
+                position: relative;
+                /* relative 는 "부모에 대해서 상대적으로"를 의미 */
+                right:100px;
+                bottom:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="other">other</div>
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </body>
+</html>

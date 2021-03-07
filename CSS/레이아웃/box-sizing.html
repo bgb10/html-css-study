@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+                /* 요즘은 이렇게 border를 기준으로 하는 trick들을 많이 사용한다. */
+            }
+            div{
+               margin:10px;
+               width: 150px;
+               /* padding과 border가 빠진 content의 크기가 element의 크기다.
+               padding과 border등이 등장하면서 크기 예측이 어려워졌는데, 이를 위해 box-sizing을 이용한다. */
+               box-sizing:border-box;
+               /* border를 기준으로 sizing을 한다. */
+            }
+            #small{
+                border:10px solid black;
+            }
+            #large{
+                border:30px solid black;
+            }
+        </style>
+    </head>
+    <body>   
+        <div id="small">Hello</div>
+        <div id="large">Hello</div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- 
+    박스모델은 element들의 간격을 조절했다면, 포지션은 element들의 위치를 지정한다.
+ -->
+<html>
+    <head>
+        <style>
+            #parent, #other{
+                border:5px solid tomato;
+            }
+            #parent{
+                position:relative;
+                /* 만약 parent의 position이 relative라면, child인 me는 parent를 기준으로
+                offset 값을 지정하게 된다. (parent 기준 절대 위치) */
+                /* 가장 처음 나오는 static이 아닌 부모를 기준으로 절대 좌표를 설정한다. */
+            }
+            #me{
+                background-color: black;
+                color:white;
+                position: absolute; 
+                /* absolute: html 태그를 기준으로, 절대 좌표를 기준으로 위치 */
+                left:0px;
+                top:50px;
+                /* 또한 absolute로 position을 지정하게 되면, 부모(parent)와의 연결이 끊긴다. 즉, 부모의 위치와 무관하다. */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="other">other</div>
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </body>
+</html>

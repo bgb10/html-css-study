@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #empty{
+                margin-top:50px;
+                margin-bottom:100px;
+                border:1px solid tomato;
+                /* 위의 border를 지우게 되면, 시각적인 요소가 사라지고,
+                그렇게 되면 margin-top과 margin-bottom 중 큰 것의 값으로 margin을 정한다. */
+            }
+            #normal{
+                background-color: powderblue;
+                margin-top:100px;
+                /* empty와 normal 태그의 마진이 겹치기 때문 */
+            }
+        </style>
+    </head>
+    <body>   
+        <div id="empty"></div>
+        <div id="normal">Hello World!</div>
+    </body>
+</html>
