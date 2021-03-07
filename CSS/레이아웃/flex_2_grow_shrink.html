@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                background-color: powderblue;
+                height:200px;
+                display:flex;
+                flex-direction: row;
+                /* flex를 쓰고 싶으면 바깥에 있는 container의 속성값을 display:flex로 줘야함
+                또한 flex-direction을 설정하지 않으면 기본값은 row다. */
+            }
+            .item{
+                background-color: tomato;
+                color:white;
+                border:1px solid white;
+                /* flex-grow:1; */
+                /* grow는 각 element들이 background를 얼마나 차지하는지 설정한다 */
+            }
+            .item:nth-child(2){
+                /* flex-grow:2; */
+                /* basis 는 각 element들의 크기를 설정한다 */
+                flex-basis:300px;
+                /* 창이 줄어들 때 element의 background가 줄어드느냐 안줄어드느냐의 여부를 설정 */
+                /* 예를 들어, shrink값이 1과 shrink값이 2인 element가 있으면, 
+                창을 줄일 때 3의 사이즈 줄임 중에서 1:2로 나눠갖는다. */
+                flex-shrink:0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>   
+    </body>
+</html>
